@@ -3,7 +3,7 @@ import LocalizedStrings from 'react-localization';
 const LocalizedString = new LocalizedStrings({
   'en-US': {
     kamusConverterMenu: {
-      title: 'Sentence to Number Converter',
+      title: 'Alphabet Converter',
 
       labelInputSentence: 'Input Sentence',
       labelConvert: 'Convert',
@@ -12,7 +12,7 @@ const LocalizedString = new LocalizedStrings({
   },
   id: {
     kamusConverterMenu: {
-      title: 'Pengubah Kalimat ke Nomor',
+      title: 'Pengubah Alphabet',
 
       labelInputSentence: 'Masukkan Kalimat',
       labelConvert: 'Mengubah',

@@ -52,9 +52,6 @@ const styles = {
     marginTop: '10px',
     transition: 'background-color 0.3s ease',
   },
-  buttonHover: {
-    backgroundColor: '#0056b3',
-  },
   outputContainer: {
     marginTop: '20px',
   },
@@ -75,7 +72,7 @@ const styles = {
   },
 };
 
-const KamusConverter = ({ input, output, onInputChange, onConvert }) => {
+const KamusConverter = ({ input, output, step2Result, step3Result, onInputChange, onConvert }) => {
   const handleInputChange = (event) => {
     onInputChange(event.target.value);
   };
@@ -100,8 +97,14 @@ const KamusConverter = ({ input, output, onInputChange, onConvert }) => {
           {LocalizedString.kamusConverterMenu.labelConvert}
         </button>
         <div style={styles.outputContainer}>
-          <h3 style={styles.outputTitle}>{LocalizedString.kamusConverterMenu.labelConvertedOutput}</h3>
+          <h3 style={styles.outputTitle}>Soal No.1</h3>
           <p style={styles.outputText}>{output}</p>
+
+          <h3 style={styles.outputTitle}>Soal No.2</h3>
+          <p style={styles.outputText}>{step2Result}</p>
+
+          <h3 style={styles.outputTitle}>Soal No.3</h3>
+          <p style={styles.outputText}>{step3Result}</p>
         </div>
       </div>
       <footer style={styles.footer}>© 2024 KamusConverter Inc.</footer>
