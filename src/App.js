@@ -1,5 +1,6 @@
 import React from 'react';
-import KamusConverter from './Screen/KamusConverter';
+import KamusConverter from './page/kamus-converter';
+
 
 function App() {
   return (
